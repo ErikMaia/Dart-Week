@@ -1,6 +1,5 @@
+import 'package:dw9_delivery_app/App/Core/ui/widget/delivery_button.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 class SplashPage extends StatelessWidget {
   const SplashPage({Key? key}) : super(key: key);
@@ -9,7 +8,7 @@ class SplashPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text("Splash Page")),
-      body: Container(),
+      body: Column(children: [DeliveryButton(label: "Button", onPressed: () {  },),TextFormField()]),
     );
   }
 }

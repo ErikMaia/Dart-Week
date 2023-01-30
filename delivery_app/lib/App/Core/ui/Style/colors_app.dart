@@ -5,7 +5,7 @@ class ColorsApp {
 
   ColorsApp._();
 
-  static ColorsApp get Instance {
+  static ColorsApp get instance {
     _instance ??= ColorsApp._();
     return _instance!;
   }
@@ -15,5 +15,5 @@ class ColorsApp {
 }
 
 extension ColorsAppExtention on BuildContext {
-  ColorsApp? get colors => ColorsApp.Instance;
+  ColorsApp? get colors => ColorsApp.instance;
 }
