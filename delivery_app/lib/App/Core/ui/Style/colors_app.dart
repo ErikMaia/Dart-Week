@@ -5,9 +5,9 @@ class ColorsApp {
 
   ColorsApp._();
 
-  static ColorsApp? get Instance {
+  static ColorsApp get Instance {
     _instance ??= ColorsApp._();
-    return _instance;
+    return _instance!;
   }
 
   Color get primary => const Color(0xFF007D21);
