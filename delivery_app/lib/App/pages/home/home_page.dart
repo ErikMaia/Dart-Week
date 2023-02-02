@@ -20,6 +20,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends BaseState<HomePage,HomeController> {
+  @override
   void onReady(){
     controller.loadProducts();
   }
