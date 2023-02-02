@@ -25,7 +25,14 @@ class SplashPage extends StatelessWidget {
                 SizedBox(height: context.percentHeight(0.3)),
                 Image.asset("assets/images/logo.png"),
                 const SizedBox(height: 30),
-                DeliveryButton(label: "ACESSAR", onPressed: (){}, height: 35, width: context.percentWidth(.6),)
+                DeliveryButton(
+                  label: "ACESSAR",
+                  onPressed: () {
+                    Navigator.of(context).popAndPushNamed('/home');
+                  },
+                  height: 35,
+                  width: context.percentWidth(.6),
+                )
               ],
             ),
           )

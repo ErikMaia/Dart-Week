@@ -2,8 +2,8 @@ import 'package:dio/dio.dart';
 import 'package:dio/native_imp.dart';
 import 'package:dw9_delivery_app/App/Core/config/env.dart';
 
-class CustonDio extends DioForNative{
-  CustonDio():super(
+class CustomDio extends DioForNative{
+  CustomDio():super(
     BaseOptions(
       baseUrl: Env.instance['backend_base_url']??"",
       connectTimeout: 5000,
@@ -11,10 +11,10 @@ class CustonDio extends DioForNative{
     )){
       interceptors.add(LogInterceptor(requestBody: true, responseBody: true,responseHeader: true));
     }
-  CustonDio auth(){
+  CustomDio auth(){
     return this;
   }
-  CustonDio unauth(){
+  CustomDio unauth(){
     return this;
   }
 }
