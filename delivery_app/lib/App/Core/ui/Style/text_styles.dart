@@ -31,6 +31,8 @@ class TextApp {
       TextStyle(fontWeight: FontWeight.w800, fontFamily: font);
 
   TextStyle get textButtonLable => textBold.copyWith(fontSize: 14);
+  
+  TextStyle get textTitle => textExtraBold.copyWith(fontSize: 28);
 }
 
 extension TextStyleExtencions on BuildContext {

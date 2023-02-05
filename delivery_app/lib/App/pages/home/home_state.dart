@@ -1,5 +1,4 @@
 import 'package:equatable/equatable.dart';
-import 'package:match/match.dart';
 
 import '../../model/product_model.dart';
 
@@ -28,7 +27,9 @@ class HomeState extends Equatable {
   @override
   List<Object?> get props => throw UnimplementedError();
 
-  HomeState copyWith({HomeStateStatus? status, List<ProductModel>? products, String? errorMessage}) {
+  get shoppingBag => null;
+
+  HomeState copyWith({HomeStateStatus? status, List<ProductModel>? products, String? errorMessage, required List shoppingBag}) {
     return HomeState(status ?? this.status, products ?? this.products, errorMessage?? this.errorMessage);
   }
 }

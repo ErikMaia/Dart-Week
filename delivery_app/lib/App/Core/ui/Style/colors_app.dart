@@ -15,5 +15,5 @@ class ColorsApp {
 }
 
 extension ColorsAppExtention on BuildContext {
-  ColorsApp? get colors => ColorsApp.instance;
+  ColorsApp get colors => ColorsApp.instance;
 }
